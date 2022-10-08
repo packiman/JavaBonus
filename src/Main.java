@@ -10,15 +10,15 @@ public class Main {
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
         int balance = 300;
-        int vznos = 2500;
+        int donation = 2500;
 
-        int  bonus;
-        if(vznos >= 1000) {
-            bonus = vznos/100;
-        }else{
+        int bonus;
+        if (donation >= 1000) {
+            bonus = donation / 100;
+        } else {
             bonus = 0;
         }
-         int itog = balance + bonus + vznos;
-        System.out.println("Итоговый баланс: " + itog);
+        int result = balance + bonus + donation;
+        System.out.println("Итоговый баланс: " + result);
     }
 }
